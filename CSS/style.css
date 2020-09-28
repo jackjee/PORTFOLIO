@@ -1,0 +1,201 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+body, .jumbotron{
+
+    background: linear-gradient(180deg, #008aff, #FF137D);
+}
+
+.jumbotron .display-4{
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 470;
+    color: rgba(199, 11, 105, 0.836);
+}
+
+.jumbotron .display-5, h3{
+    text-transform: uppercase;
+    font-weight: 500;
+    color: white;
+    font-family: cursive;
+}
+
+
+.jumbotron .change_content:after{
+    content:'';
+    animation: changetext 15s infinite linear;
+    color: rgba(172, 15, 88, 0.795);
+    font-weight: 900;
+    font-family: cursive;
+    padding: 10px;
+}
+
+@keyframes changetext{
+    0%{content:"WEB DEV" ;}
+    20%{content:"WEB DESIGNER" ; }
+    35%{content:"ETHICAL HACKER";}
+    60%{content:"CRACKER";}
+    80%{content:"PYTHON DEV";}
+    100%{content:"TECH EXPERT";}
+}
+
+.jumbotron .display-6{
+    color: rgba(68, 0, 255, 0.911);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.jumbotron .myself{
+    font-size: 30px;
+    font-family: cursive;
+    color: white;
+}
+
+.jumbotron .quote{
+    font-style: italic;
+    text-align: center;
+    font-size: 45px;
+    color: rgba(55, 0, 255, 0.945);
+}
+
+.row .info{
+    font-family: cursive;
+}
+
+.card{
+    display: flexbox;
+}
+
+.myprojects{
+    background: linear-gradient(180deg, #008aff, #FF137D);
+    color: whitesmoke;
+    font-family: cursive;
+
+    
+}
+
+.myprojects .hey{
+    color: rgba(55, 0, 255, 0.945);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.aboutme{
+    background: linear-gradient(180deg, #008aff, #FF137D);
+}
+
+.aboutme .aboutpara{
+    font-weight:600;
+    font-size: 30px;
+    font-family: cursive;
+    color: white;
+}
+
+.jumbotron .movies{
+   color:rgba(199, 11, 105, 0.836);
+}
+
+.jumbotron .movieslist{
+    font-size: 25px;
+    color: white;
+}
+
+.contactme{
+    color: white;
+}
+.contactme .email{
+    color: rgba(199, 11, 105, 0.836);
+}
+
+.contactme .insta{
+    color: rgba(55, 0, 255, 0.945);
+    
+}
+
+.contactme .contactid, .contact{
+    font-size: 30px;
+    font-family: cursive;
+}
+
+.jumbotron .logo{
+    position: relative;
+    right: 100px;
+    filter: contrast(10);
+}
+
+.contactme .contact, .insta{
+    position: relative;
+    bottom: 90px;
+}
+
+.container{
+    position: relative;
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.container h2{
+    font-weight: bold;
+    font-family: fantasy;
+}
+
+.container p{
+    font-family: cursive;
+}
+
+.container .card{
+    position: relative;
+    max-width: 500px;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 202px rgba(0,0,0,0.5);
+    transition: 0.3s ease-in-out;
+    background: linear-gradient(180deg, #008aff, #FF137D);
+}
+
+
+.container .card:hover{
+    height: 420px;
+}
+
+.container .card .imgBx{
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    left: 20px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.container .card .imgBx img{
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.container .card .content{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3 ease-in-out;
+}
+
+.container .card:hover .content{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+
+}
