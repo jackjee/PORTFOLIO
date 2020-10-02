@@ -6,13 +6,13 @@
 
 
 body, .jumbotron{
-
+    font-family: 'Roboto', sans-serif
     background: linear-gradient(180deg, #008aff, #FF137D);
 }
 
 .jumbotron .display-4{
     text-transform: uppercase;
-    font-family: 'font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 470;
     color: rgba(199, 11, 105, 0.836);
 }
