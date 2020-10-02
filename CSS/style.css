@@ -6,7 +6,7 @@
 
 
 body, .jumbotron{
-    font-family: 'Roboto', sans-serif
+    font-family: 'Roboto', sans-serif;
     background: linear-gradient(180deg, #008aff, #FF137D);
 }
 
